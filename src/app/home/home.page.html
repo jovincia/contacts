@@ -1,20 +1,32 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      Blank
-    </ion-title>
-  </ion-toolbar>
-</ion-header>
-
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
+<ion-header translucent>
     <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
+      <ion-title>Connexion</ion-title>
     </ion-toolbar>
   </ion-header>
-
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
-  </div>
-</ion-content>
+  <ion-content fullscreen>
+    <form onsubmit="processForm(event)">
+      <ion-list lines="full" class="ion-no-margin ion-no-padding">
+        <ion-item>
+          <h1>
+            <ion-label position="stacked" >Login <ion-text color="danger">*</ion-text>
+          </ion-label>
+        </h1>
+        <h5>
+          <ion-input required type="text" oninput="handleFirstNameValue(event)" placeholder="Votre Pseudo"></ion-input>
+        </h5>
+        </ion-item>
+        <ion-item>
+          <h1>
+          <ion-label position="stacked" >Password <ion-text color="danger">*</ion-text>
+          </ion-label>
+        </h1>
+        <h5>
+          <ion-input required type="Password" oninput="handleLastNameValue(event)" placeholder="Votre mot de passe"></ion-input>
+        </h5>
+        </ion-item>
+      </ion-list>
+      <div class="ion-padding">
+          <ion-button routerLink ="/mes-contactes" size="large" color="medium" class="ion-color ion-color-medium ios button button-large button-solid ion-activatable ion-focusable hydrated">Envoyer</ion-button>
+        </div>
+        </form>
+  </ion-content>

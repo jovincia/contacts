@@ -1,0 +1,18 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Mes_contactes</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-list>
+   <ion-item *ngFor="let data of contactesData ">
+     <ion-label>
+       <ion-avatar slot="start">
+         <img src="{{data.picture.medium}}" >
+       </ion-avatar>
+       <h3>{{data.name.first}}  {{data.name.last}}</h3>
+     </ion-label>
+   </ion-item>
+  </ion-list>
+</ion-content>
