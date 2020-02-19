@@ -1,4 +1,8 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { Result } from '../models/contactes';
+import { ApiService } from '../services/api.service';
+import { Router } from '@angular/router';
+import {NavController} from '@ionic/angular';
 
 @Component({
   selector: 'app-home',
@@ -6,8 +10,14 @@ import { Component } from '@angular/core';
   styleUrls: ['home.page.scss'],
 })
 export class HomePage {
+  contactesData: any[];
 
-  constructor() {}
+
+
+  constructor(private apiService: ApiService, private navC: NavController) 
+  {this.contactesData = [];}
   
-
 }
+
+ 
+

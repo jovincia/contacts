@@ -1,6 +1,6 @@
 
 
-    export interface Name {
+export interface Name {
         title: string;
         first: string;
         last: string;
@@ -51,10 +51,7 @@
         age: number;
     }
 
-    export interface Id {
-        name: string;
-        value: string;
-    }
+    export interface Id {}
 
     export interface Picture {
         large: string;

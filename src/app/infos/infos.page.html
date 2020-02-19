@@ -1,0 +1,79 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-icon  (click)="ListC()"></ion-icon>
+    <ion-title >Informations{{ id }}</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <img src="{{picture}}" alt="" width="100%">
+      <ion-row style="padding-left: 60px;">
+        <ion-col size="6" class="infosPage">
+          Nom :
+        </ion-col>
+        <ion-col size="6" class="infosPage">
+          {{firstName}}
+        </ion-col>
+      </ion-row>
+  <hr width="100%">
+      <ion-row style="padding-left: 60px;" class="infosPage">
+        <ion-col size="6">
+          Prenom :
+        </ion-col>
+        <ion-col size="6" class="infosPage">
+          {{lastName}}
+        </ion-col>
+      </ion-row>
+  <hr width="100%">
+
+      <ion-row style="padding-left: 60px;" class="infosPage">
+        <ion-col size="6">
+          Sexe :
+        </ion-col>
+        <ion-col size="6" class="infosPage">
+          {{gender}}
+        </ion-col>
+      </ion-row>
+  <hr width="100%">
+
+      <ion-row style="padding-left: 60px;" class="infosPage">
+        <ion-col size="6">
+          Age :
+        </ion-col>
+        <ion-col size="6" class="infosPage">
+          {{age}}
+        </ion-col>
+      </ion-row>
+  <hr width="100%">
+
+      <ion-row style="padding-left: 60px;" class="infosPage">
+        <ion-col size="6">
+          Nationnalité :
+        </ion-col>
+        <ion-col size="6" class="infosPage">
+          {{nat}}
+        </ion-col>
+      </ion-row>
+  <hr width="100%">
+
+      <ion-row style="padding-left: 60px;" class="infosPage">
+        <ion-col size="6">
+          Téléphone :
+        </ion-col>
+        <ion-col size="6" class="infosPage">
+          {{phone}}
+        </ion-col>
+      </ion-row>
+  <hr width="100%">
+
+      <ion-row style="padding-left: 60px;" class="infosPage">
+        <ion-col size="6">
+          Ville :
+        </ion-col>
+        <ion-col size="6" class="infosPage">
+          {{ville}}
+        </ion-col>
+      </ion-row>
+  <hr width="100%">
+
+</ion-content>

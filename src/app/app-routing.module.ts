@@ -8,6 +8,10 @@ const routes: Routes = [
     path: 'mes-contactes',
     loadChildren: () => import('./mes-contactes/mes-contactes.module').then( m => m.MesContactesPageModule)
   },
+  {
+    path: 'infos/:id',
+    loadChildren: () => import('./infos/infos.module').then( m => m.InfosPageModule)
+  },
 ];
 
 @NgModule({
